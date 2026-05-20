@@ -17,8 +17,8 @@
   --text-muted: #555555;
   --white: #FFFFFF;
 
-  --font-heading: 'Inter', sans-serif;
-  --font-body: 'Inter', sans-serif;  
+  --font-heading: 'Bricolage Grotesque', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
   --max-width: 1100px;
   --section-padding: 120px;
   --section-padding-mobile: 80px;
@@ -361,16 +361,21 @@ button {
 .hero__grid-bg {
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(circle, #1a1a1a 1px, transparent 1px);
-  background-size: 32px 32px;
+  background-image: radial-gradient(circle, #3a3a3a 1px, transparent 1px);
+  background-size: 28px 28px;
   animation: grid-drift 60s linear infinite;
-  opacity: 0.6;
+  opacity: 0.65;
   pointer-events: none;
 }
 
 @keyframes grid-drift {
-  0% { transform: translate(0, 0); }
-  100% { transform: translate(32px, 32px); }
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(32px, 32px);
+  }
 }
 
 .hero__glow {
@@ -378,9 +383,9 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: min(800px, 90vw);
-  height: min(600px, 70vh);
-  background: radial-gradient(ellipse at center, rgba(0, 112, 243, 0.06) 0%, transparent 70%);
+  width: min(900px, 95vw);
+  height: min(700px, 75vh);
+  background: radial-gradient(ellipse at center, rgba(0, 112, 243, 0.22) 0%, rgba(0, 112, 243, 0.08) 45%, transparent 70%);
   pointer-events: none;
 }
 
@@ -411,9 +416,10 @@ button {
 .hero__subheadline {
   font-size: clamp(16px, 2vw, 19px);
   color: var(--text-secondary);
-  max-width: 620px;
+  max-width: 580px;
   line-height: 1.7;
   margin-bottom: 40px;
+  text-wrap: balance;
 }
 
 .hero__ctas {
@@ -476,8 +482,15 @@ button {
 }
 
 @keyframes bounce {
-  0%, 100% { transform: translateX(-50%) translateY(0); }
-  50% { transform: translateX(-50%) translateY(8px); }
+
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+
+  50% {
+    transform: translateX(-50%) translateY(8px);
+  }
 }
 
 /* ============================================
@@ -983,14 +996,14 @@ button {
 
 @media (max-width: 1024px) {
   .services__grid {
-    grid-template-columns: 1fr;
-    max-width: 480px;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
     margin: 0 auto;
   }
 
   .testimonials__grid {
-    grid-template-columns: 1fr;
-    max-width: 480px;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
     margin: 0 auto;
   }
 
@@ -1001,6 +1014,20 @@ button {
 
   .process__line {
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .services__grid {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .testimonials__grid {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+    margin: 0 auto;
   }
 }
 
@@ -1150,6 +1177,7 @@ button {
 
 /* Reduced motion preference */
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {

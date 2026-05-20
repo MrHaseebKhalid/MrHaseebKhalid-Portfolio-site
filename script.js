@@ -74,6 +74,13 @@
     // Hero entrance
     const heroTl = gsap.timeline({ defaults: { ease: 'power3.out' } });
 
+
+    // Set initial state FIRST before any animation runs
+    gsap.set(
+      ['.hero__eyebrow', '.hero__headline', '.hero__subheadline', '.hero__ctas', '.hero__stats', '.hero__scroll'],
+      { y: 28 }
+    );
+
     heroTl
       .to('.hero__eyebrow', { opacity: 1, y: 0, duration: 0.6, delay: 0.2 })
       .to('.hero__headline', { opacity: 1, y: 0, duration: 0.8 }, '-=0.3')
@@ -82,11 +89,7 @@
       .to('.hero__stats', { opacity: 1, y: 0, duration: 0.6 }, '-=0.2')
       .to('.hero__scroll', { opacity: 1, y: 0, duration: 0.5 }, '-=0.1');
 
-    // Set initial y offset for hero elements
-    gsap.set(
-      ['.hero__eyebrow', '.hero__headline', '.hero__subheadline', '.hero__ctas', '.hero__stats', '.hero__scroll'],
-      { y: 28 }
-    );
+
 
     // Section reveals
     gsap.utils.toArray('.reveal').forEach((el) => {
