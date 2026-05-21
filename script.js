@@ -77,20 +77,22 @@
 
     // Set initial state FIRST before any animation runs
     gsap.set(
-      ['.hero__eyebrow', '.hero__headline', '.hero__subheadline', '.hero__ctas', '.hero__stats', '.hero__scroll'],
+      ['.hero__eyebrow', '.hero__trust', '.hero__headline', '.hero__subheadline', '.hero__ctas', '.hero__availability', '.hero__stats', '.hero__scroll'],
       { y: 28 }
     );
 
     heroTl
       .to('.hero__eyebrow', { opacity: 1, y: 0, duration: 0.6, delay: 0.2 })
+      .to('.hero__trust', { opacity: 1, y: 0, duration: 0.5 }, '-=0.3')
       .to('.hero__headline', { opacity: 1, y: 0, duration: 0.8 }, '-=0.3')
       .to('.hero__subheadline', { opacity: 1, y: 0, duration: 0.7 }, '-=0.4')
       .to('.hero__ctas', { opacity: 1, y: 0, duration: 0.6 }, '-=0.3')
+      .to('.hero__availability', { opacity: 1, y: 0, duration: 0.5 }, '-=0.2')
       .to('.hero__stats', { opacity: 1, y: 0, duration: 0.6 }, '-=0.2')
       .to('.hero__scroll', { opacity: 1, y: 0, duration: 0.5 }, '-=0.1');
 
 
-
+      
     // Section reveals
     gsap.utils.toArray('.reveal').forEach((el) => {
       gsap.to(el, {
