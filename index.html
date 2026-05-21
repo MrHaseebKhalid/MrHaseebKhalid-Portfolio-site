@@ -121,7 +121,7 @@
         <p class="eyebrow">// WHO YOU'RE WORKING WITH</p>
         <h2 class="section-title">You're Not Just<br>Another Client Here.</h2>
 
-        
+
         <div class="about__grid">
           <div class="about__text reveal">
             <p>I'm Haseeb Khalid — a Flutter developer who works with <strong>one founder at a time.</strong> Your app
@@ -176,58 +176,125 @@
     <section class="section" id="services">
       <div class="container">
         <p class="eyebrow">// SERVICES</p>
-        <h2 class="section-title">Everything You Need to<br>Launch Your MVP.</h2>
+        <h2 class="section-title">Pick Your Path.<br>Let's Build It.</h2>
+        <p class="section-subtext">Three clear options. No confusion. Pick your stage and let's build.</p>
 
         <div class="services__grid">
-          <article class="card service-card reveal">
-            <div class="service-card__icon">
-              <i data-lucide="smartphone"></i>
+
+          <!-- Card 1 — Prototype MVP -->
+          <article class="card service-card reveal" data-service="prototype">
+            <div class="service-card__top">
+              <span class="service-card__for">For idea validation</span>
             </div>
-            <h3 class="service-card__title">Flutter MVP Development</h3>
-            <p class="service-card__desc">From wireframe to working app — I build pixel-perfect, performant Flutter apps
-              for Android. Clean architecture, readable code, and a UI that impresses users from day one.</p>
-            <div class="tags tags--sm">
-              <span class="tag">Flutter</span>
-              <span class="tag">Dart</span>
-              <span class="tag">MVVM</span>
-              <span class="tag">Provider</span>
+            <h3 class="service-card__title">Prototype MVP</h3>
+            <p class="service-card__desc">A real, working Flutter app built to validate your idea — no backend, no
+              fluff. Perfect for showing investors or testing with early users.</p>
+
+            <div class="service-card__includes">
+              <p class="service-card__includes-label">What's included:</p>
+              <ul class="service-card__list">
+                <li>✦ Flutter UI — all screens built</li>
+                <li>✦ Clean MVVM architecture</li>
+                <li>✦ Dummy/static data integration</li>
+                <li>✦ Play Store-ready APK</li>
+                <li class="service-card__list-no">✗ No Firebase backend</li>
+                <li class="service-card__list-no">✗ No deployment included</li>
+              </ul>
             </div>
+
+            <div class="service-card__price">
+              <span class="service-card__price-value">$299</span>
+              <span class="service-card__price-label">Starting price</span>
+            </div>
+
+            <a href="#contact" class="btn btn--outline service-card__cta"
+              onclick="prefillForm('I\'m interested in the Prototype MVP service. My app idea is: ')">
+              Build My Prototype →
+            </a>
           </article>
 
-          <article class="card service-card reveal">
-            <div class="service-card__icon">
-              <i data-lucide="database"></i>
+          <!-- Card 2 — Production MVP (Most Popular) -->
+          <article class="card service-card service-card--featured reveal" data-service="production">
+            <div class="service-card__top">
+              <span class="service-card__for">Ready to launch</span>
+              <span class="badge badge--popular">Most Popular</span>
             </div>
-            <h3 class="service-card__title">Firebase Backend Integration</h3>
-            <p class="service-card__desc">No backend team? No problem. I wire your app to Firebase — Authentication,
-              Firestore, Storage, and Cloud Functions — giving you a production-grade backend without the overhead.</p>
-            <div class="tags tags--sm">
-              <span class="tag">Firebase</span>
-              <span class="tag">Firestore</span>
-              <span class="tag">Auth</span>
-              <span class="tag">Cloud Functions</span>
+            <h3 class="service-card__title">Production MVP</h3>
+            <p class="service-card__desc">Full Flutter app with a real Firebase backend. Auth, database, storage —
+              everything working. Built for real users. Deployment not included.</p>
+
+            <div class="service-card__includes">
+              <p class="service-card__includes-label">What's included:</p>
+              <ul class="service-card__list">
+                <li>✦ Full Flutter UI</li>
+                <li>✦ Firebase Auth + Firestore</li>
+                <li>✦ Storage + Cloud Functions</li>
+                <li>✦ MVVM clean architecture</li>
+                <li>✦ Play Store-ready APK</li>
+                <li class="service-card__list-no">✗ Deployment not included</li>
+              </ul>
             </div>
+
+            <div class="service-card__price">
+              <span class="service-card__price-value">$499</span>
+              <span class="service-card__price-label">Starting price</span>
+            </div>
+
+            <a href="#contact" class="btn btn--primary service-card__cta"
+              onclick="prefillForm('I\'m interested in the Production MVP service. My app idea is: ')">
+              Start My MVP →
+            </a>
           </article>
 
-          <article class="card service-card service-card--featured reveal">
-            <span class="badge">Most Popular</span>
-            <div class="service-card__icon">
-              <i data-lucide="rocket"></i>
+          <!-- Card 3 — Idea to Play Store (Best Value) -->
+          <article class="card service-card reveal" data-service="full">
+            <div class="service-card__top">
+              <span class="service-card__for">For non-technical founders</span>
+              <span class="badge badge--value">Best Value</span>
             </div>
             <h3 class="service-card__title">Idea to Play Store</h3>
-            <p class="service-card__desc">The complete package. I take your raw idea through scoping, design,
-              development, testing, and full Play Store deployment. You get a live app, not just a repo.</p>
-            <div class="tags tags--sm">
-              <span class="tag">End-to-End</span>
-              <span class="tag">4 Weeks</span>
-              <span class="tag">Play Store</span>
+            <p class="service-card__desc">You bring the idea. I handle everything — UI design, Flutter development,
+              Firebase backend, and full Play Store deployment. One person. Zero hassle.</p>
+
+            <div class="service-card__includes">
+              <p class="service-card__includes-label">What's included:</p>
+              <ul class="service-card__list">
+                <li>✦ UI/UX Design</li>
+                <li>✦ Full Flutter development</li>
+                <li>✦ Firebase backend</li>
+                <li>✦ Play Store deployment</li>
+                <li>✦ Store listing + screenshots</li>
+                <li>✦ Full handoff. Zero effort from you.</li>
+              </ul>
             </div>
+
+            <div class="service-card__price">
+              <span class="service-card__price-value">$799</span>
+              <span class="service-card__price-label">Starting price</span>
+            </div>
+
+            <a href="#contact" class="btn btn--outline service-card__cta"
+              onclick="prefillForm('I\'m interested in the Idea to Play Store service. My app idea is: ')">
+              Launch My App →
+            </a>
           </article>
+
         </div>
+
+        <!-- Bottom CTA -->
+        <div class="services__bottom">
+          <p>Not sure which one is right for you?</p>
+          <a href="#contact" class="btn btn--outline"
+            onclick="prefillForm('I\'m not sure which service fits my needs. My app idea is: ')">
+            Let's Talk →
+          </a>
+        </div>
+
       </div>
     </section>
 
     <hr class="section-divider">
+
 
     <!-- ========== PORTFOLIO ========== -->
     <!--

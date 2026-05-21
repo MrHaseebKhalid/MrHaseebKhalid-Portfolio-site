@@ -92,7 +92,7 @@
       .to('.hero__scroll', { opacity: 1, y: 0, duration: 0.5 }, '-=0.1');
 
 
-      
+
     // Section reveals
     gsap.utils.toArray('.reveal').forEach((el) => {
       gsap.to(el, {
@@ -196,4 +196,20 @@
 
   // Re-init icons after Lucide deferred script loads
   window.addEventListener('load', initIcons);
+
+
+
 })();
+
+
+// ---------- Service card contact form prefill ----------
+function prefillForm(message) {
+  setTimeout(() => {
+    const textarea = document.querySelector('#message');
+    if (textarea) {
+      textarea.value = message;
+      textarea.focus();
+      textarea.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }, 600);
+}
