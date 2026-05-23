@@ -310,8 +310,12 @@
 
           <!-- APP 01 -->
           <article class="portfolio-card reveal">
-            <div class="portfolio-card__mockup">
+            <div class="portfolio-card__mockup portfolio-card__mockup--clickable"
+              data-gallery='["./assets/apps/mockup_1.webp","./assets/apps/mockup_2.webp","./assets/apps/mockup_3.webp"]'>
               <img src="./assets/apps/mockup_1.webp" alt="App Name">
+              <div class="portfolio-card__mockup-overlay">
+                <span class="portfolio-card__mockup-hint">⤢</span>
+              </div>
             </div>
             <div class="portfolio-card__content">
               <div class="portfolio-card__meta-top">
@@ -345,9 +349,12 @@
 
           <!-- APP 02 -->
           <article class="portfolio-card portfolio-card--reverse reveal">
-            <div class="portfolio-card__mockup">
-              <!-- [REPLACE] <img src="./assets/apps/app2-mockup.png" alt="App Name"> -->
+            <div class="portfolio-card__mockup portfolio-card__mockup--clickable"
+              data-gallery='["./assets/apps/mockup_2.webp","./assets/apps/mockup_5.webp"]'>
               <img src="./assets/apps/mockup_2.webp" alt="App Name">
+              <div class="portfolio-card__mockup-overlay">
+                <span class="portfolio-card__mockup-hint">⤢</span>
+              </div>
             </div>
             <div class="portfolio-card__content">
               <div class="portfolio-card__meta-top">
@@ -381,9 +388,12 @@
 
           <!-- APP 03 -->
           <article class="portfolio-card reveal">
-            <div class="portfolio-card__mockup">
-              <!-- [REPLACE] <img src="./assets/apps/app3-mockup.png" alt="App Name"> -->
+            <div class="portfolio-card__mockup portfolio-card__mockup--clickable"
+              data-gallery='["./assets/apps/mockup_3.webp"]'>
               <img src="./assets/apps/mockup_3.webp" alt="App Name">
+              <div class="portfolio-card__mockup-overlay">
+                <span class="portfolio-card__mockup-hint">⤢</span>
+              </div>
             </div>
             <div class="portfolio-card__content">
               <div class="portfolio-card__meta-top">
@@ -417,9 +427,12 @@
 
           <!-- APP 04 -->
           <article class="portfolio-card portfolio-card--reverse reveal">
-            <div class="portfolio-card__mockup">
-              <!-- [REPLACE] <img src="./assets/apps/app4-mockup.png" alt="App Name"> -->
+            <div class="portfolio-card__mockup portfolio-card__mockup--clickable"
+              data-gallery='["./assets/apps/mockup_4.webp"]'>
               <img src="./assets/apps/mockup_4.webp" alt="App Name">
+              <div class="portfolio-card__mockup-overlay">
+                <span class="portfolio-card__mockup-hint">⤢</span>
+              </div>
             </div>
             <div class="portfolio-card__content">
               <div class="portfolio-card__meta-top">
@@ -453,9 +466,12 @@
 
           <!-- APP 05 — LIVE ON PLAY STORE -->
           <article class="portfolio-card reveal">
-            <div class="portfolio-card__mockup">
-              <!-- [REPLACE] <img src="./assets/apps/app5-mockup.png" alt="App Name"> -->
+            <div class="portfolio-card__mockup portfolio-card__mockup--clickable"
+              data-gallery='["./assets/apps/mockup_5.webp","./assets/apps/mockup_2.webp","./assets/apps/mockup_4.webp"]'>
               <img src="./assets/apps/mockup_5.webp" alt="App Name">
+              <div class="portfolio-card__mockup-overlay">
+                <span class="portfolio-card__mockup-hint">⤢</span>
+              </div>
             </div>
             <div class="portfolio-card__content">
               <div class="portfolio-card__meta-top">
@@ -498,9 +514,20 @@
         </div>
 
         <div class="portfolio__bottom">
-          <p class="portfolio__bottom-label">// IN PROGRESS</p>
-          <p>More apps currently in development. <a href="#contact"
-              style="color:var(--accent);text-decoration:none;">Get in touch</a> to see my latest work directly.</p>
+          <div class="portfolio__bottom-stats">
+            <div class="portfolio__bottom-stat">
+              <span class="portfolio__bottom-stat-value">12+</span>
+              <span class="portfolio__bottom-stat-label">Apps Built</span>
+            </div>
+            <div class="portfolio__bottom-stat-divider"></div>
+            <div class="portfolio__bottom-stat">
+              <span class="portfolio__bottom-stat-value">5</span>
+              <span class="portfolio__bottom-stat-label">Featured Here</span>
+            </div>
+          </div>
+          <p class="portfolio__bottom-text">These are my top 5 — hand-picked for quality, architecture, and real-world
+            delivery. Want to see the full range?</p>
+          <a href="#contact" class="btn btn--outline" style="width:fit-content; padding: 12px 32px;">Get in Touch →</a>
         </div>
 
       </div>
@@ -515,105 +542,287 @@
       <div class="container">
         <p class="eyebrow">// HOW I WORK</p>
         <h2 class="section-title">From Your Idea to a<br>Live Product — Step by Step.</h2>
+        <p class="section-subtext">No guesswork. No surprises. Every project follows the same proven 5-step system — so
+          you always know what's happening, what's next, and when you ship.</p>
 
-        <div class="process__track">
-          <div class="process__line" aria-hidden="true"></div>
+        <div class="process__timeline">
 
           <article class="process-step reveal">
-            <div class="process-step__header">
+            <div class="process-step__left">
               <span class="process-step__number">01</span>
-              <span class="process-step__dot" aria-hidden="true"></span>
+              <div class="process-step__dot"></div>
+              <div class="process-step__line"></div>
             </div>
-            <h3 class="process-step__title">Discovery</h3>
-            <p class="process-step__desc">We start with a focused call to understand your idea, your users, and your
-              business goal. I ask the right questions to make sure we build the right thing.</p>
+            <div class="process-step__right">
+              <div class="process-step__head">
+                <h3 class="process-step__title">Discovery</h3>
+                <span class="process-step__time">Day 1</span>
+              </div>
+              <p class="process-step__desc">We start with a focused call to understand your idea, your users, and your
+                business goal. I ask the right questions to make sure we build the right thing — not just what you asked
+                for.</p>
+            </div>
           </article>
 
           <article class="process-step reveal">
-            <div class="process-step__header">
+            <div class="process-step__left">
               <span class="process-step__number">02</span>
-              <span class="process-step__dot" aria-hidden="true"></span>
+              <div class="process-step__dot"></div>
+              <div class="process-step__line"></div>
             </div>
-            <h3 class="process-step__title">Scope &amp; Plan</h3>
-            <p class="process-step__desc">I define the MVP feature set — cutting everything non-essential. You get a
-              clear project scope, timeline, and milestone plan before a single line of code is written.</p>
+            <div class="process-step__right">
+              <div class="process-step__head">
+                <h3 class="process-step__title">Scope & Plan</h3>
+                <span class="process-step__time">Days 2–3</span>
+              </div>
+              <p class="process-step__desc">I define the MVP feature set — cutting everything non-essential. You get a
+                clear project scope, timeline, and milestone plan before a single line of code is written.</p>
+            </div>
           </article>
 
           <article class="process-step reveal">
-            <div class="process-step__header">
+            <div class="process-step__left">
               <span class="process-step__number">03</span>
-              <span class="process-step__dot" aria-hidden="true"></span>
+              <div class="process-step__dot"></div>
+              <div class="process-step__line"></div>
             </div>
-            <h3 class="process-step__title">Design &amp; Build</h3>
-            <p class="process-step__desc">I build your app in Flutter with Firebase — clean architecture, readable code,
-              and a UI that looks and feels premium. You get regular updates throughout.</p>
+            <div class="process-step__right">
+              <div class="process-step__head">
+                <h3 class="process-step__title">Design & Build</h3>
+                <span class="process-step__time">Weeks 1–3</span>
+              </div>
+              <p class="process-step__desc">I build your app in Flutter with Firebase — clean architecture, readable
+                code, and a UI that looks and feels premium. You get regular progress updates throughout.</p>
+            </div>
           </article>
 
           <article class="process-step reveal">
-            <div class="process-step__header">
+            <div class="process-step__left">
               <span class="process-step__number">04</span>
-              <span class="process-step__dot" aria-hidden="true"></span>
+              <div class="process-step__dot"></div>
+              <div class="process-step__line"></div>
             </div>
-            <h3 class="process-step__title">Test &amp; Refine</h3>
-            <p class="process-step__desc">Every screen is tested on a real Android device. I fix bugs, polish
-              interactions, and make sure your app is stable before it ever reaches users.</p>
+            <div class="process-step__right">
+              <div class="process-step__head">
+                <h3 class="process-step__title">Test & Refine</h3>
+                <span class="process-step__time">Week 4</span>
+              </div>
+              <p class="process-step__desc">Every screen is tested on a real Android device. I fix bugs, polish
+                interactions, and make sure your app is stable and ready before it ever reaches your users.</p>
+            </div>
           </article>
 
           <article class="process-step reveal">
-            <div class="process-step__header">
+            <div class="process-step__left">
               <span class="process-step__number">05</span>
-              <span class="process-step__dot" aria-hidden="true"></span>
+              <div class="process-step__dot"></div>
+              <div class="process-step__line"></div>
             </div>
-            <h3 class="process-step__title">Launch</h3>
-            <p class="process-step__desc">I handle the full Play Store submission — store listing, screenshots,
-              metadata, and review. Your app goes live. You start getting real user feedback.</p>
+            <div class="process-step__right">
+              <div class="process-step__head">
+                <h3 class="process-step__title">Launch</h3>
+                <span class="process-step__time">End of Week 4</span>
+              </div>
+              <p class="process-step__desc">I handle the full Play Store submission — listing, screenshots, metadata,
+                and review. Your app goes live. You start getting real user feedback from day one.</p>
+            </div>
           </article>
+
         </div>
+
+        <div class="process__summary">
+          <div class="process__summary-stats" style="margin-right: 30px;">
+            <div class="process__summary-stat">
+              <span class="process__summary-val">4 Weeks</span>
+              <span class="process__summary-label">Total Timeline</span>
+            </div>
+            <div class="process__summary-divider"></div>
+            <div class="process__summary-stat">
+              <span class="process__summary-val">5 Steps</span>
+              <span class="process__summary-label">Clear & Defined</span>
+            </div>
+            <div class="process__summary-divider"></div>
+            <div class="process__summary-stat">
+              <span class="process__summary-val">Zero</span>
+              <span class="process__summary-label">Surprises</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn--outline"
+            style="width:fit-content; padding:12px 32px; align-self:center;">Start the Process →</a>
+        </div>
+
       </div>
     </section>
 
     <hr class="section-divider">
+
 
     <!-- ========== TESTIMONIALS ========== -->
     <section class="section" id="testimonials">
       <div class="container">
         <p class="eyebrow">// TESTIMONIALS</p>
         <h2 class="section-title">What Founders Say.</h2>
+      </div>
 
-        <!-- Replace [Client Name] with real names and update quotes with actual testimonials -->
-        <div class="testimonials__grid">
-          <blockquote class="card testimonial-card reveal">
-            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
-            <p class="testimonial-card__quote">"Haseeb delivered exactly what I needed — a clean, working Flutter app
-              connected to Firebase, on time and within budget. Communication was great throughout."</p>
-            <hr class="testimonial-card__divider">
-            <footer>
-              <cite class="testimonial-card__name">[Client Name]</cite>
-              <p class="testimonial-card__role">Startup Founder · Fiverr Client</p>
+      <div class="testimonials__marquee">
+        <div class="testimonials__track">
+
+          <!-- CARD 1 -->
+          <blockquote class="testimonial-card">
+            <p class="testimonial-card__quote">Haseeb delivered exactly what I needed — a clean, working Flutter app
+              connected to Firebase, on time and within budget. Communication was great throughout.</p>
+            <footer class="testimonial-card__attribution">
+              <div class="testimonial-card__left">
+                <cite class="testimonial-card__name">[Client Name]</cite>
+                <span class="testimonial-card__role">Startup Founder</span>
+              </div>
+              <div class="testimonial-card__right">
+                <span class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</span>
+                <span class="testimonial-card__platform">Fiverr</span>
+              </div>
             </footer>
           </blockquote>
 
-          <blockquote class="card testimonial-card reveal">
-            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
-            <p class="testimonial-card__quote">"I had an idea and no technical background. Haseeb broke it down into
-              clear steps, explained every decision, and shipped an MVP I'm genuinely proud of."</p>
-            <hr class="testimonial-card__divider">
-            <footer>
-              <cite class="testimonial-card__name">[Client Name]</cite>
-              <p class="testimonial-card__role">Solo Entrepreneur · Direct Client</p>
+          <!-- CARD 2 -->
+          <blockquote class="testimonial-card">
+            <p class="testimonial-card__quote">I had an idea and no technical background. Haseeb broke it down into
+              clear steps, explained every decision, and shipped an MVP I'm genuinely proud of.</p>
+            <footer class="testimonial-card__attribution">
+              <div class="testimonial-card__left">
+                <cite class="testimonial-card__name">[Client Name]</cite>
+                <span class="testimonial-card__role">Solo Entrepreneur</span>
+              </div>
+              <div class="testimonial-card__right">
+                <span class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</span>
+                <span class="testimonial-card__platform">Direct</span>
+              </div>
             </footer>
           </blockquote>
 
-          <blockquote class="card testimonial-card reveal">
-            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
-            <p class="testimonial-card__quote">"Fast, professional, and the code quality is excellent. He didn't just
-              build what I asked for — he suggested improvements that made the app better."</p>
-            <hr class="testimonial-card__divider">
-            <footer>
-              <cite class="testimonial-card__name">[Client Name]</cite>
-              <p class="testimonial-card__role">App Founder · Fiverr Client</p>
+          <!-- CARD 3 -->
+          <blockquote class="testimonial-card">
+            <p class="testimonial-card__quote">Fast, professional, and the code quality is excellent. He didn't just
+              build what I asked for — he suggested improvements that made the app better.</p>
+            <footer class="testimonial-card__attribution">
+              <div class="testimonial-card__left">
+                <cite class="testimonial-card__name">[Client Name]</cite>
+                <span class="testimonial-card__role">App Founder</span>
+              </div>
+              <div class="testimonial-card__right">
+                <span class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</span>
+                <span class="testimonial-card__platform">Fiverr</span>
+              </div>
             </footer>
           </blockquote>
+
+          <!-- CARD 4 — [REPLACE with real testimonial] -->
+          <blockquote class="testimonial-card">
+            <p class="testimonial-card__quote">The app was delivered on time and exceeded my expectations. Haseeb
+              understood exactly what I needed and built it without any back and forth.</p>
+            <footer class="testimonial-card__attribution">
+              <div class="testimonial-card__left">
+                <cite class="testimonial-card__name">[Client Name]</cite>
+                <span class="testimonial-card__role">Product Founder</span>
+              </div>
+              <div class="testimonial-card__right">
+                <span class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</span>
+                <span class="testimonial-card__platform">Direct</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <!-- CARD 5 — [REPLACE with real testimonial] -->
+          <blockquote class="testimonial-card">
+            <p class="testimonial-card__quote">Working with Haseeb felt like having a technical co-founder. He cared
+              about the product, not just the code. I'll hire him again for the next version.</p>
+            <footer class="testimonial-card__attribution">
+              <div class="testimonial-card__left">
+                <cite class="testimonial-card__name">[Client Name]</cite>
+                <span class="testimonial-card__role">Startup Founder</span>
+              </div>
+              <div class="testimonial-card__right">
+                <span class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</span>
+                <span class="testimonial-card__platform">Fiverr</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <!-- DUPLICATES FOR SEAMLESS LOOP -->
+          <blockquote class="testimonial-card">
+            <p class="testimonial-card__quote">Haseeb delivered exactly what I needed — a clean, working Flutter app
+              connected to Firebase, on time and within budget. Communication was great throughout.</p>
+            <footer class="testimonial-card__attribution">
+              <div class="testimonial-card__left">
+                <cite class="testimonial-card__name">[Client Name]</cite>
+                <span class="testimonial-card__role">Startup Founder</span>
+              </div>
+              <div class="testimonial-card__right">
+                <span class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</span>
+                <span class="testimonial-card__platform">Fiverr</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card">
+            <p class="testimonial-card__quote">I had an idea and no technical background. Haseeb broke it down into
+              clear steps, explained every decision, and shipped an MVP I'm genuinely proud of.</p>
+            <footer class="testimonial-card__attribution">
+              <div class="testimonial-card__left">
+                <cite class="testimonial-card__name">[Client Name]</cite>
+                <span class="testimonial-card__role">Solo Entrepreneur</span>
+              </div>
+              <div class="testimonial-card__right">
+                <span class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</span>
+                <span class="testimonial-card__platform">Direct</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card">
+            <p class="testimonial-card__quote">Fast, professional, and the code quality is excellent. He didn't just
+              build what I asked for — he suggested improvements that made the app better.</p>
+            <footer class="testimonial-card__attribution">
+              <div class="testimonial-card__left">
+                <cite class="testimonial-card__name">[Client Name]</cite>
+                <span class="testimonial-card__role">App Founder</span>
+              </div>
+              <div class="testimonial-card__right">
+                <span class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</span>
+                <span class="testimonial-card__platform">Fiverr</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card">
+            <p class="testimonial-card__quote">The app was delivered on time and exceeded my expectations. Haseeb
+              understood exactly what I needed and built it without any back and forth.</p>
+            <footer class="testimonial-card__attribution">
+              <div class="testimonial-card__left">
+                <cite class="testimonial-card__name">[Client Name]</cite>
+                <span class="testimonial-card__role">Product Founder</span>
+              </div>
+              <div class="testimonial-card__right">
+                <span class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</span>
+                <span class="testimonial-card__platform">Direct</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card">
+            <p class="testimonial-card__quote">Working with Haseeb felt like having a technical co-founder. He cared
+              about the product, not just the code. I'll hire him again for the next version.</p>
+            <footer class="testimonial-card__attribution">
+              <div class="testimonial-card__left">
+                <cite class="testimonial-card__name">[Client Name]</cite>
+                <span class="testimonial-card__role">Startup Founder</span>
+              </div>
+              <div class="testimonial-card__right">
+                <span class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</span>
+                <span class="testimonial-card__platform">Fiverr</span>
+              </div>
+            </footer>
+          </blockquote>
+
         </div>
       </div>
     </section>
@@ -695,6 +904,23 @@
     </section>
 
   </main>
+
+  <!-- ========== LIGHTBOX ========== -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="lightbox__backdrop" id="lightbox-backdrop"></div>
+    <button class="lightbox__close" id="lightbox-close" aria-label="Close preview">✕</button>
+    <div class="lightbox__content">
+      <img class="lightbox__img" id="lightbox-img" src="" alt="App preview">
+      <div class="lightbox__nav" id="lightbox-nav">
+        <button class="lightbox__btn lightbox__prev" id="lightbox-prev" aria-label="Previous image">←</button>
+        <span class="lightbox__counter" id="lightbox-counter"></span>
+        <button class="lightbox__btn lightbox__next" id="lightbox-next" aria-label="Next image">→</button>
+      </div>
+    </div>
+  </div>
+
+
+
 
   <!-- ========== FOOTER ========== -->
   <footer class="footer">
