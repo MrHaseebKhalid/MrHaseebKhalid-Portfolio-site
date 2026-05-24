@@ -46,6 +46,30 @@
   });
 
   window.addEventListener('scroll', handleNavbarScroll, { passive: true });
+  // Active nav link on scroll
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  function updateActiveNav() {
+    const scrollY = window.scrollY + navbar.offsetHeight + 40;
+    sections.forEach(section => {
+      const top = section.offsetTop;
+      const height = section.offsetHeight;
+      const id = section.getAttribute('id');
+      if (scrollY >= top && scrollY < top + height) {
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '#' + id) {
+            link.classList.add('active');
+          }
+        });
+      }
+    });
+  }
+
+  window.addEventListener('scroll', updateActiveNav, { passive: true });
+  updateActiveNav();
+
   handleNavbarScroll();
 
   // ---------- Smooth scroll offset for fixed navbar ----------
