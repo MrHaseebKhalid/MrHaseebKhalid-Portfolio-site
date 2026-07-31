@@ -1525,7 +1525,7 @@ button {
 /* Mobile testimonial scroll speed */
 @media (max-width: 768px) {
   .testimonials__track {
-    animation: testimonials-scroll 30s linear infinite;
+    animation: testimonials-scroll 5s linear infinite;
   }
 }
 
