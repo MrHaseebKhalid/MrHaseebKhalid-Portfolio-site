@@ -1522,6 +1522,13 @@ button {
   animation: testimonials-scroll 40s linear infinite;
 }
 
+/* Mobile testimonial scroll speed */
+@media (max-width: 768px) {
+  .testimonials__track {
+    animation: testimonials-scroll 30s linear infinite;
+  }
+}
+
 .testimonials__track:hover {
   animation-play-state: paused;
 }
