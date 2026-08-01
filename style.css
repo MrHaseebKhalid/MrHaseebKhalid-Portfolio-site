@@ -1537,7 +1537,7 @@ button {
 /* Mobile testimonial scroll speed */
 @media (max-width: 768px) {
   .testimonials__track {
-    animation: testimonials-scroll 5s linear infinite;
+    animation-duration: 35s;
   }
 }
 
@@ -1946,6 +1946,10 @@ button {
     margin: 0 auto;
   }
 
+  .testimonial-card {
+    width: 300px;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -2349,8 +2353,8 @@ button {
   }
 
   .testimonial-card {
-    width: 100%;
-    max-width: 100%;
+    width: calc(100vw - 48px);
+    max-width: 355px;
     padding: 24px 20px 20px;
   }
 
@@ -2376,10 +2380,6 @@ button {
     max-width: 100%;
   }
 
-  .testimonial-card {
-    width: 50%;
-    max-width: 100%;
-  }
 
   .section-title {
     font-size: clamp(28px, 7vw, 40px);
