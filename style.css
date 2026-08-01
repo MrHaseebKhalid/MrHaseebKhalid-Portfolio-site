@@ -653,6 +653,18 @@ button {
   flex-shrink: 0;
 }
 
+.about__reason {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.about__reason span:last-child {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
 
 .about__photo-wrap {
   position: relative;
