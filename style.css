@@ -7,14 +7,14 @@
   --bg-secondary: #0a0a0a;
   --bg-card: #111111;
   --bg-card-hover: #161616;
-  --border: #1f1f1f;
-  --border-subtle: #141414;
+  --border: #3a3a3a;
+  --border-subtle: #262626;
   --accent: #0070F3;
   --accent-glow: rgba(0, 112, 243, 0.15);
   --accent-hover: #338ef7;
   --text-primary: #EDEDED;
-  --text-secondary: #888888;
-  --text-muted: #555555;
+  --text-secondary: #b8b8b8;
+  --text-muted: #949494;
   --white: #FFFFFF;
 
   --font-heading: 'Bricolage Grotesque', sans-serif;
@@ -1593,7 +1593,7 @@ button {
 .testimonial-card__quote {
   font-style: normal;
   font-size: 15px;
-  color: #cccccc;
+  color: var(--text-primary);
   line-height: 1.75;
   flex: 1;
   margin-bottom: 24px;
@@ -1888,7 +1888,7 @@ button {
 
 .footer__copy {
   font-size: 12px;
-  color: #444;
+  color: var(--text-muted);
 }
 
 .footer__avail {
@@ -1896,7 +1896,7 @@ button {
   align-items: center;
   gap: 6px;
   font-size: 12px;
-  color: #666;
+  color: var(--text-secondary);
 }
 
 .footer__avail-dot {
@@ -1912,7 +1912,7 @@ button {
 
 .footer__role {
   font-size: 12px;
-  color: #333;
+  color: var(--text-muted);
 }
 
 /* ============================================
