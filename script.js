@@ -117,8 +117,16 @@
 
 
 
-    // Section reveals
+    // Section reveals — excludes elements handled individually by ScrollTrigger.batch below,
+    // so no element gets animated by two competing tweens at once
     gsap.utils.toArray('.reveal').forEach((el) => {
+      if (
+        el.closest('.services__grid') ||
+        el.classList.contains('process-step') ||
+        el.classList.contains('portfolio-card')
+      ) {
+        return;
+      }
       gsap.to(el, {
         scrollTrigger: {
           trigger: el,
@@ -134,21 +142,6 @@
 
     // Stagger service cards
     ScrollTrigger.batch('.services__grid .reveal', {
-      start: 'top 85%',
-      onEnter: (batch) => {
-        gsap.to(batch, {
-          opacity: 1,
-          y: 0,
-          duration: 0.7,
-          stagger: 0.1,
-          ease: 'power3.out',
-          overwrite: true,
-        });
-      },
-    });
-
-    // Stagger testimonial cards
-    ScrollTrigger.batch('.testimonials__grid .reveal', {
       start: 'top 85%',
       onEnter: (batch) => {
         gsap.to(batch, {
