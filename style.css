@@ -1544,7 +1544,7 @@ button {
 }
 
 .testimonial-card {
-  width: 335px;
+  width: 355px;
   max-width: 100%;
   flex-shrink: 0;
   background: var(--bg-secondary);
@@ -2365,7 +2365,7 @@ button {
   }
 
   .testimonial-card {
-    width: 100%;
+    width: 50%;
     max-width: 100%;
   }
 
